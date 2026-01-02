@@ -1,1 +1,113 @@
+Question Generation System (QuGen)
+Overview
 
+QuGen is an AI-powered question generation system designed to automatically generate exam-oriented questions from input text or images.
+The project supports multiple question formats commonly used in academic evaluations.
+
+This system is useful for:
+
+Teachers and educators
+
+Exam preparation tools
+
+AI-based learning platforms
+
+Features
+
+Automatic question generation from text
+
+Supports multiple question formats:
+
+One-mark questions
+
+Six-mark questions
+
+Twelve-mark questions
+
+Image-based text extraction
+
+Custom question formatting
+
+Modular and extensible codebase
+
+Project Structure
+qugen/
+│
+├── app.py                 # Main application entry point
+├── extraction.py          # Text extraction logic
+├── check.py               # Utility / testing script
+├── qformat.py             # Question formatting utilities
+│
+├── one_mark.py            # One-mark question generator
+├── six_marks.py           # Six-mark question generator
+├── twelve_marks.py        # Twelve-mark question generator
+│
+├── image.png              # Sample input image
+├── requirements2.txt      # Project dependencies
+├── .env                   # Environment variables
+│
+├── venv/                  # Virtual environment
+└── __pycache__/           # Python cache files
+
+Installation
+1. Clone the Repository
+git clone https://github.com/<your-username>/qugen.git
+cd qugen
+
+2. Create and Activate Virtual Environment (Windows)
+python -m venv venv
+venv\Scripts\activate
+
+3. Install Dependencies
+pip install -r requirements2.txt
+
+Configuration
+
+Create a .env file in the root directory and add your API keys or configuration values:
+
+API_KEY=your_api_key_here
+
+Usage
+
+Run the main application:
+
+python app.py
+
+
+You can modify input text, image files, or question formats as required in the respective modules.
+
+Customization
+
+Modify one_mark.py, six_marks.py, or twelve_marks.py to adjust question difficulty
+
+Extend extraction.py for advanced OCR or text processing
+
+Update qformat.py to change output structure
+
+Tech Stack
+
+Python 3.x
+
+NLP / LLM-based processing
+
+OCR (for image input)
+
+Modular Python architecture
+
+Future Enhancements
+
+Web UI for question generation
+
+Support for PDF input
+
+Difficulty-level control
+
+Batch question generation
+
+Export to PDF or DOCX
+
+Author
+
+Vijay Srinivasan
+AI & Machine Learning Engineer
+Specialized in Deep Learning and RAG-based systems
